@@ -1,0 +1,19 @@
+h1. Fedora - Blogging in style with Sinatra
+
+h3. Why Fedora?
+
+Simply put, because everything else did either too much, or too little. I wanted to blog without the frustrations of logging in, categorizing the post, and most of all, dealing with Wordpress' stupid WYSIWYDG (that would be "don't get") editor.
+
+With Fedora, when inspiration strikes, you're ready to write at a moment's notice. Just open your favorite editor, and type away. Sure, you _can_ put metadata at the top of your post, but that's optional.
+
+h3. Requirements
+
+Ruby. Sinatra. Builder. ERB. That's it.
+
+h3. License
+
+Fedora is freely available, and you may use it for both commercial, or non-commercial purposes, just make sure that you comply with the attached license document.
+
+h3. Got feedback?
+
+Questions, comments, or suggestions may be addressed to nicholas at nicholaswyoung.com

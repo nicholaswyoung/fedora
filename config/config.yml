@@ -1,0 +1,9 @@
+title_format: "%entry_title% | %site_name%"
+site_name: "Fedora"
+root_title: "A small, almost-wearable, Ruby blog platform"
+host: "localhost"
+attachment_directory: "" # Point this to either the attachments directory, or the url for your CDN bucket.
+front_page_posts: 5
+summary_length: 300
+disqus_short_name: "fedora"
+content_directory: content

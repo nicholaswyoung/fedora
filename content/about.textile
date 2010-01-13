@@ -1,0 +1,7 @@
+title: About
+date: 2010-01-11 14:57:00 -0600
+type: page
+
+Fedora was born out of frustration with other blogging platforms, specifically those that made you deal with WYSIWYG editors, stupid URL structures, and frustrating textareas. 
+
+It was written by "Nicholas Young":http://nicholaswyoung.com - a Ruby, PHP, and Python developer - and was originally intended to run his blog, and the blogs of his friends, but grew to be a much larger project during development. Fedora was released to the open-source community on January 13, 2010.

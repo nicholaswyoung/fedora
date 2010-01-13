@@ -1,0 +1,15 @@
+h1. Using Fedora
+
+h3. Composing Posts
+
+Writing posts with Fedora is easy, once you understand how it works. Assume that your site is static, and that all of your content is inside the "content" folder. Every folder inside it represents a break (or slash) in the url, much like children, or subchildren in a database-driven system. Example: if I wanted to create a page at http://mysite.com/fruit/apples, I would create a new folder inside of the content directory called "fruit", and put apples.textile inside of it.
+
+h3. Adding metadata
+
+Like I mentioned in the readme, metadata is optional. The only thing Fedora requires is content - but sometimes, it's nice to add a bit of organization. Fedora doesn't lock you down to specific parameters, instead, you can simply define whatever types of metadata you want at the top of a post:
+
+layout: post
+author: Nicholas Young
+title: My Great Post
+
+Each of these elements will automatically be transformed into a key-value pair, and can be accessed like so: page['metadata']['layout'] .

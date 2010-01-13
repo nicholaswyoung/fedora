@@ -1,0 +1,20 @@
+title: Using Fedora
+date: 2010-01-11 14:57:00 -0600
+type: page
+
+h3. Composing Posts
+
+Writing posts with Fedora is easy, once you understand how it works. Assume that your site is static, and that all of your content is inside the "content" folder. Every folder inside it represents a break (or slash) in the url, much like children, or subchildren in a database-driven system. Example: if I wanted to create a page at http://mysite.com/fruit/apples, I would create a new folder inside of the content directory called "fruit", and put apples.textile inside of it. For a more in-depth look, just dig inside the content directory of this demo.
+
+h3. Adding metadata
+
+Metadata is what helps Fedora sort your posts, and lets your readers know who wrote what. The options below should be fairly explanatory. Just add this to the top of your page (or post), and you're good to go. Note: summary is optional, and if it isn't set, will default to the first 300 characters of your entry
+
+title: My Great Post
+date: 2010-01-11 14:57:00 -0600
+author: Nicholas
+layout: page
+type: post
+summary: a brief summary of my great post
+
+Each of these elements will automatically be transformed into a key-value pair, and can be accessed like so:  @page[:title].

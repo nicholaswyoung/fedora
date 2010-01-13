@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title><%= @layout_title %></title>
+	<meta name="generator" content="Fedora: http://nicholaswyoung.com/software/fedora" />
+	<meta name="author" content="Nicholas Young" />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+	<!--
+		Date: 2009-01-13
+		
+		Usage of this layout, or any of the included partial pages, included but not limited to index.erb, page.erb,
+		and the included CSS document (/stylesheets/style.css) (hereafter "theme"), indicates agreement to the
+		following license:
+		
+		This theme may not be used, reproduced, or distributed without proper references to the copyright holder,
+		Nicholas Young, and a link to http://nicholaswyoung.com. The credit and link may be placed anywhere in the
+		source code (or on the site itself) that is visible on all portions of the site.
+		
+		Basically, if you use it - even if it's modified, I want credit for the original design. That's all.
+		Outside of that, feel free to modify, bundle, distribute, and yes, even sell it. ;)
+	-->
+</head>
+<body>
+	<div class="body_area">
+		<div class="header foreground">
+			<div class="header_inside">
+				<ul class="inline">
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/documentation">Documentation</a></li>
+					<li class="floatRight"><a href="/atom.xml">Feed</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="title_bar">
+			<img src="/images/fedora.png" class="floatLeft fedora">
+			<h1><span class="muted">Welcome to</span> Fedora, the classy, easy-to-use web publishing solution for those who just want to write. <span class="muted">This system was designed to make publishing your thoughts a snap.</span></h1>
+		</div>
+		<div class="clear padding"></div>
+		<div class="main">
+			<%= yield %>
+		</div>
+		<div class="right_sidebar">
+			<div class="sidebar_widget foreground">
+				<div class="ribbon">
+					<div class="ribbon_inside">
+						Resources
+					</div>
+				</div>
+				<div class="sidebar_widget_inside">
+					Are you a developer looking to make Fedora your own, or do you simply want to learn more?<br/><br />There's plenty of information around, and no matter whether you just operate a Fedora-powered site, or want to contribute code - you are appreciated. All of the source code is available at <a href="http://github.com/nicholaswyoung/fedora">GitHub</a>, and if you have questions (or for that matter, want to write a tutorial for others), why don't you visit the <a href="http://github.com/nicholaswyoung/fedora/wiki">wiki</a>?
+					<br /><br />
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			&copy; 2009 Nicholas Young. Some Rights Reserved.<br />
+			Powered by <a href="http://nicholaswyoung.com/software/fedora">Fedora</a>
+		</div>
+	</div>
+</body>
+</html>
