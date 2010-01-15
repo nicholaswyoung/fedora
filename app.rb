@@ -31,6 +31,14 @@ helpers do
     Fedora::Configuration.get('disqus_short_name')
   end
   
+  def seo_keywords
+    "<meta name=\"keywords\" content\"#{Fedora::Configuration.get('seo_keywords')}\">"
+  end
+  
+  def seo_description
+    "<meta name=\"description\" content\"#{Fedora::Configuration.get('seo_description')}\">"
+  end
+  
 end
 
 get '/atom.xml' do
@@ -53,5 +61,5 @@ end
 get '*' do
   @page = Fedora::Page.load(params[:splat].first.to_s)
   @layout_title = Fedora::Configuration.title(@page[:title])
-  erb :page
+  erb @page[:layout].to_sym
 end

@@ -1,0 +1,17 @@
+<div class="post">
+	<div class="title_area foreground">
+		<h2><a href="<%= @page[:permalink] %>"><%= @page[:title] %></a></h2>
+		<h3 class="meta">Posted on <%= @page[:date] %> by <%= @page[:author] %></h3>
+	</div>
+	<div class="content_area foreground">
+		<%= @page[:body] %>
+		<div class="clear"></div>
+		<hr />
+		<div id="disqus_thread">
+			<script type="text/javascript">
+				var disqus_developer = true;
+			</script>
+			<script type="text/javascript" src="http://disqus.com/forums/<%= disqus_short_name %>/embed.js">&nbsp;</script>
+		</div>
+	</div>
+</div>

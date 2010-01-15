@@ -1,7 +1,7 @@
 title: Another Test
 date: 2010-01-11 14:57:00 -0600
 author: Fedora Admin
-layout: page
+layout: post
 type: post
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac est est, id mollis lacus. Proin id mauris sed leo luctus hendrerit ut ut sapien. Curabitur vulputate blandit diam, sagittis auctor nisi egestas vel. Curabitur pulvinar dolor eu enim imperdiet sed luctus arcu fringilla. Duis quis molestie augue. Fusce euismod vehicula felis, quis blandit orci dapibus id. Suspendisse tincidunt massa in turpis elementum vel consectetur dolor bibendum. Praesent vestibulum interdum dictum. Donec non turpis nunc, non lacinia enim. Vestibulum faucibus lectus lacinia risus fringilla aliquam.

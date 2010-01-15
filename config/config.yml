@@ -1,6 +1,9 @@
 title_format: "%entry_title% | %site_name%"
 site_name: "Fedora"
 root_title: "A small, almost-wearable, Ruby blog platform"
+seo_keywords: "Fedora, Ruby, Sinatra, Blogging, Content Management"
+seo_description: "Fedora: the classy way to blog."
+current_theme: "default"
 host: "localhost"
 attachment_directory: "" # Point this to either the attachments directory, or the url for your CDN bucket.
 front_page_posts: 5
