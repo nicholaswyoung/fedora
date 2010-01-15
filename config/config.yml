@@ -1,6 +1,6 @@
 title_format: "%entry_title% | %site_name%"
 site_name: "Fedora"
-root_title: "A small, almost-wearable, Ruby blog platform"
+root_title: "Fedora | A small, classy, Ruby blog platform"
 seo_keywords: "Fedora, Ruby, Sinatra, Blogging, Content Management"
 seo_description: "Fedora: the classy way to blog."
 current_theme: "default"
