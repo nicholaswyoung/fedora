@@ -52,6 +52,18 @@ get '/sitemap.xml' do
   "Coming soon!"
 end
 
+get '/archives/:year*' do
+  @pages = Fedora::Page.by_year(params[:year])
+  @layout_title = Fedora::Configuration.title("Archives for #{params[:year]}")
+  erb :archive
+end
+
+get '/archives/:year/:month*' do
+  @pages = Fedora::Page.by_month(params[:year], params[:month])
+  @layout_title = Fedora::Configuration.title("Archives for #{params[:month]}-#{params[:year]}")
+  erb :archive
+end
+
 get '/' do
   @layout_title = Fedora::Configuration.get('root_title')
   @pages = Fedora::Page.all

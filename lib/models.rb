@@ -75,6 +75,36 @@ module Fedora
         sorted = @files.sort_by { |k| k[:sort_date] }
         return sorted.reverse[0..Fedora::Configuration.get('front_page_posts').to_i]
       end
+      
+      def by_year(year)
+        @files = Array.new
+        @i = 0
+        file_pattern = File.join( Fedora::Configuration.get('content_path'),
+                                  Fedora::Configuration.get('posts_path'), year, "**", "*.textile")
+        Dir.glob(file_pattern).each_with_index do |path, i|
+          @file = self.load(path.gsub('content', '').gsub('.textile', ''))
+          if @file[:type] == 'post'
+            @files << self.load(path.gsub('content', '').gsub('.textile', ''))
+          end
+        end
+        sorted = @files.sort_by { |k| k[:sort_date] }
+        return sorted.reverse
+      end
+      
+      def by_month(year, month)
+        @files = Array.new
+        @i = 0
+        file_pattern = File.join( Fedora::Configuration.get('content_path'), 
+                                  Fedora::Configuration.get('posts_path'), year, month, "*.textile")
+        Dir.glob(file_pattern).each_with_index do |path, i|
+          @file = self.load(path.gsub('content', '').gsub('.textile', ''))
+          if @file[:type] == 'post'
+            @files << self.load(path.gsub('content', '').gsub('.textile', ''))
+          end
+        end
+        sorted = @files.sort_by { |k| k[:sort_date] }
+        return sorted.reverse
+      end
 
       def paragraph_is_metadata(text)
         text.split("\n").first =~ /^[\w ]+:/

@@ -10,3 +10,4 @@ front_page_posts: 5
 summary_length: 300
 disqus_short_name: "fedora"
 content_path: "content"
+posts_path: "posts"
