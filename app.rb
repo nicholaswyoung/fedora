@@ -3,13 +3,13 @@
 # => Copyright 2010 Nicholas Young (nicholas at nicholaswyoung.com)
 # => (See the included license document or http://www.opensource.org/licenses/mit-license.php for details.)
 #
-
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
 require 'rubygems'
 require 'sinatra'
 require 'builder'
 require 'erb'
-require 'lib/configuration'
-require 'lib/models'
+require 'configuration'
+require 'models'
 
 puts "== Putting on his hat..."
 
@@ -49,7 +49,8 @@ get '/atom.xml' do
 end
 
 get '/sitemap.xml' do
-  "Coming soon!"
+  @pages = Fedora::Page.all
+  builder :sitemap
 end
 
 get '/archives/:year*' do
