@@ -24,18 +24,18 @@ helpers do
   end
   
   def link_url
-    "http://#{Fedora::Configuration.host}"
+    "http://#{Fedora::Configuration.get('host')}"
   end
   
   def disqus_short_name
-    Fedora::Configuration.disqus_short_name
+    Fedora::Configuration.get('disqus_short_name')
   end
   
 end
 
 get '/atom.xml' do
   @pages = Fedora::Page.all
-  @layout_title = Fedora::Configuration.title(Fedora::Configuration.index_title)
+  @layout_title = Fedora::Configuration.get('root_title')
   content_type 'application/xml'
   builder :atom
 end
@@ -45,7 +45,7 @@ get '/sitemap.xml' do
 end
 
 get '/' do
-  @layout_title = Fedora::Configuration.title(Fedora::Configuration.index_title)
+  @layout_title = Fedora::Configuration.get('root_title')
   @pages = Fedora::Page.all
   erb :index
 end

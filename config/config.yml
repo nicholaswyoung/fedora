@@ -6,4 +6,4 @@ attachment_directory: "" # Point this to either the attachments directory, or th
 front_page_posts: 5
 summary_length: 300
 disqus_short_name: "fedora"
-content_directory: content
+content_path: "content"
