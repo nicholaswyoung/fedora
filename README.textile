@@ -8,7 +8,7 @@ With Fedora, when inspiration strikes, you're ready to write at a moment's notic
 
 h3. Requirements
 
-Ruby. Sinatra. Builder. ERB. That's it.
+Ruby. Sinatra. Builder. ERB. RedCloth. That's it.
 
 h3. License
 
