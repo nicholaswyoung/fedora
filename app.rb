@@ -8,8 +8,8 @@ require 'rubygems'
 require 'sinatra'
 require 'builder'
 require 'erb'
-require 'configuration'
-require 'models'
+require 'fedora/configuration'
+require 'fedora/models'
 
 puts "== Putting on his hat..."
 
